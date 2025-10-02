@@ -1,0 +1,1 @@
+Este es un bug que arruina la aplicación.
