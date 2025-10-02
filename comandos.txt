@@ -1,0 +1,3 @@
+git status  Verifica el estado del repositorio.
+git add: Añade cambios al staging area.
+git commit: Registra los cambios en el historial.
