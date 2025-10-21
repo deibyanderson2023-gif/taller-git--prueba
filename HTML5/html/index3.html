@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Accesibilidad y HTML5</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header>
+        <h2>Ejercicios de Accesibilidad y HTML5</h2>
+        <nav aria-label="Menú principal del sitio">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Precios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2 style="text-align:center;">Formulario de Contacto</h2>
+        <div align="center">
+            <form style="display:inline-block; width: 320px;">
+                <fieldset style="padding:1em;">
+                    <legend>Datos personales</legend>
+                    <div style="margin-bottom:0.7em;">
+                        <label for="nombre">Nombre:</label><br>
+                        <input type="text" id="nombre" name="nombre" required style="width:95%; padding:0.3em;">
+                    </div>
+                    <div style="margin-bottom:0.7em;">
+                        <label for="email">Correo electrónico:</label><br>
+                        <input type="email" id="email" name="email" required style="width:95%; padding:0.3em;">
+                    </div>
+                    <div style="margin-bottom:0.7em;">
+                        <label for="edad">Edad:</label><br>
+                        <input type="number" id="edad" name="edad" required min="1" style="width:95%; padding:0.3em;">
+                    </div>
+                    <div style="text-align:right;">
+                        <button type="submit" style="padding:0.3em 0.8em;">Enviar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <h2 style="text-align:center;">Tabla de Precios</h2>
+        <div align="center">
+            <div style="display:inline-block; border:1px solid #887979; border-radius:8px; padding:1em; background:#fafafa;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Plan</th>
+                            <th>Precio</th>
+                            <th>Características</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Básico</td>
+                            <td>10.000$</td>
+                            <td>Acceso limitado, soporte básico</td>
+                            <td><button type="button">Elegir</button></td>
+                            <td
+                        </tr>
+                        <tr>
+                            <td>Pro</td>
+                            <td>50.000$</td>
+                            <td>Acceso completo, soporte estándar</td>
+                            <td><button type="button">Elegir</button></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" style="text-align:center; font-weight:600; background:#ffffff;">Premium: 100.000$ (incluye soporte avanzado, asesoría personalizada y actualizaciones)</td>
+                            <td><button type="button">Elegir</button></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">*Precios sujetos a cambios sin previo aviso.</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 style="text-align:center;">Imágenes y Accesibilidad</h2>
+        <div align="center">
+            <figure>
+                <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29uYSUyMHRyYWJhamFuZG8lMjBlbiUyMGxhcHRvcHxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000"
+                     alt="Retrato de una persona usando computadora portátil"
+                     width="220">
+                <figcaption>Retrato de una persona usando computadora portátil</figcaption>
+            </figure>
+        </div>
+        <div align="center">
+        <figure>
+            <img src="data:image/png;base64,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" 
+            alt="Logotipo de la empresa"
+            wid="220">
+            <figcaption>Logotipo de la empresa</figcaption>
+        </figure>
+        </div>
+        <div align="center">
+        <figure>
+            <img src="https://content-viajes.nationalgeographic.com.es/medio/2022/02/03/lago-saint-mary-eeuu_d4b115c5_1254x836.jpg" 
+            alt="Paisaje natural con montañas y lago"
+            width="220">
+            <figcaption>Paisaje natural con montañas y lago</figcaption>
+        </figure>
+        </div>
+        <div align="center">
+        <figure>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkfOGLgkL6EvgLNw0Vxz8kfiEcqyDQogbYWQ&s" 
+            alt="Icono de sobre representando correo electrónico"
+            width="220">
+            <figcaption>Icono de correo electrónico</figcaption>
+        </figure>
+        </div>
+    </section>
+</body>
+</html>

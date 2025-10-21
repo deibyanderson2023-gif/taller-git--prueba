@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Currículum — Deiby Ibarra</title>
+  <style>
+    /* Estilos base */
+    body {
+      font-family: system-ui, Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+      margin: 1rem;
+      background-color: #7a7a7a;
+      color: #222;
+    }
+
+    header, main, section, footer {
+      max-width: 900px;
+      margin-inline: auto;
+    }
+
+    /* Encabezado flexible */
+    header {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      border-bottom: 2px solid #aa9999;
+      padding-bottom: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Imagen responsiva */
+    header img {
+      width: 120px;        /* tamaño por defecto en escritorio */
+      max-width: 30%;      /* no exceder el 30% del ancho del contenedor */
+      height: auto;        /* mantiene proporción */
+      object-fit: cover;
+      border-radius: 8px;
+      flex: 0 0 auto;
+    }
+
+    /* En pantallas pequeñas */
+    @media (max-width: 480px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      header img {
+        width: 120px;
+        max-width: 60%;
+        margin-bottom: 0.5rem;
+      }
+
+      header > div {
+        flex: 1 1 100%;
+      }
+    }
+
+    /* Enlaces y listas */
+    address a {
+      color: inherit;
+      text-decoration: underline;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.3rem;
+    }
+
+    footer {
+      text-align: center;
+      border-top: 2px solid #ccc;
+      padding-top: 1rem;
+      margin-top: 2rem;
+    }
+
+    footer a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    h1, h2 {
+      color: #1a1a1a;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <h1>Deiby Alexander Ibarra Zapata</h1>
+        <address>
+          <div><a href="mailto:deibyanderson2015@gmail.com">deibyanderson2015@gmail.com</a></div>
+          <div><a href="tel:+573024667715">+57 302 4667715</a></div>
+          <div>Cisneros (Antioquia) - Colombia</div>
+        </address>
+      </div>
+
+      <!-- Imagen del perfil -->
+      <img src="https://github.com/deibyanderson2023-gif/taller-git--prueba/blob/main/Deiby.jpg?raw=true" 
+      alt="Foto de perfil de Deiby Ibarra" />
+    </header>
+
+    <section id="perfil">
+      <h2>Perfil</h2>
+      <p>Técnico en Gestion Administrativa en el Servicio Nacional de Aprendizaje (SENA).</p>
+      <p>Estudiante de Tecnología en Análisis y Desarrollo de Software en el Servicio Nacional de Aprendizaje (SENA).</p>
+    </section>
+
+    <section id="experiencia">
+      <h2>Experiencia laboral</h2>
+      <ul>
+        <li>
+          <h3>Desarrolladora en proceso</h3>
+          <p><strong>2024 — Presente</strong> — <em>SENA</em></p>
+          <p>Responsable de construir interfaces accesibles y componentes reutilizables usando HTML, CSS, JavaScript, Python y estructura de cableado .</p>
+        </li>
+
+        <li>
+          <h3>Desarrolladora Junior</h3>
+          <p><strong>2022 — 2023</strong> — <em>SENA</em></p>
+          <p>Participación en técnico de Gestion Administrativa.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>Programación orientada a objetos (POO)</li>
+        <li>Desarrollo web (HTML, CSS, JavaScript, Python)</li>
+        <li>Documentación técnica</li>
+        <li>Control de versiones (Git)</li>
+      </ul>
+    </section>
+
+    <footer>
+      <h2>Enlaces</h2>
+      <p>
+        <a href="https://github.com/deibyanderson2023-gif" target="_blank" rel="noopener">GitHub</a> |
+        <a href="https://www.linkedin.com/in/deiby-ibarra-855043237/" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
