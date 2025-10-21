@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Currículum — Nombre Apellido</title>
+</head>
+<body>
+	<header>
+		<h1>Nombre Apellido</h1>
+		<p>
+			Correo: <a href="mailto:tu.email@ejemplo.com">tu.email@ejemplo.com</a> |
+			Teléfono: <a href="tel:+34123456789">+34 123 456 789</a>
+		</p>
+		<!-- Foto opcional: reemplaza src y alt según corresponda -->
+		<figure>
+			<img src="img/mi-foto.jpg" alt="Retrato de Nombre Apellido" width="120">
+			<figcaption>Perfil profesional</figcaption>
+		</figure>
+	</header>
+
+	<main>
+		<section id="perfil" aria-labelledby="perfil-title">
+			<h2 id="perfil-title">Perfil</h2>
+			<p>
+				Desarrollador web con experiencia en HTML5, accesibilidad y buenas prácticas. Interés en construir interfaces
+				semánticas y accesibles, y en colaborar en equipos ágiles para entregar soluciones sencillas y mantenibles.
+			</p>
+		</section>
+
+		<section id="experiencia" aria-labelledby="experiencia-title">
+			<h2 id="experiencia-title">Experiencia laboral</h2>
+			<!-- Usamos una lista de definición para asociar puesto/empresa y descripción -->
+			<dl>
+				<dt>
+					<h3>Desarrollador Frontend — Empresa A</h3>
+					<strong>Mar 2020 — Presente</strong>
+				</dt>
+				<dd>
+					<ul>
+						<li>Implementación de interfaces accesibles con HTML semántico.</li>
+						<li>Colaboración con diseñadores y QA para pruebas de usabilidad.</li>
+					</ul>
+				</dd>
+
+				<dt>
+					<h3>Desarrollador Junior — Empresa B</h3>
+					<strong>Jun 2018 — Feb 2020</strong>
+				</dt>
+				<dd>
+					<p>Participación en proyectos de migración a HTML5 y optimización de contenido para dispositivos móviles.</p>
+				</dd>
+			</dl>
+		</section>
+
+		<section id="habilidades" aria-labelledby="habilidades-title">
+			<h2 id="habilidades-title">Habilidades</h2>
+			<ul>
+				<li>HTML5 semántico y accesibilidad (WCAG basics)</li>
+				<li>Formularios accesibles y validación nativa</li>
+				<li>Maquetación responsive (conceptos)</li>
+				<li>Control de versiones (Git)</li>
+			</ul>
+		</section>
+	</main>
+
+	<footer>
+		<p>Enlaces:</p>
+		<ul>
+			<li><a href="https://github.com/tu-usuario" target="_blank" rel="noopener">GitHub</a></li>
+			<li><a href="https://www.linkedin.com/in/tu-usuario" target="_blank" rel="noopener">LinkedIn</a></li>
+		</ul>
+	</footer>
+</body>
+</html>
